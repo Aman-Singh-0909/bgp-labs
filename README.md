@@ -28,4 +28,4 @@ sudo containerlab deploy -t lab1-bgp-hijack/bgp-hijack.yml
 ```
 
 ## Author
-Your Name — Learning BGP Security
+Aman-Singh
