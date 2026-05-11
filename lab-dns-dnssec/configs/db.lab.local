@@ -1,0 +1,25 @@
+$TTL    604800
+@       IN      SOA     ns1.lab.local. admin.lab.local. (
+                        2024010101      ; Serial
+                        604800          ; Refresh
+                        86400           ; Retry
+                        2419200         ; Expire
+                        604800 )        ; Negative Cache TTL
+;
+; Name servers
+@       IN      NS      ns1.lab.local.
+
+; A records
+ns1     IN      A       127.0.0.1
+www     IN      A       10.0.0.1
+mail    IN      A       10.0.0.2
+; This is a key-signing key, keyid 4556, for lab.local.
+; Created: 20260511081743 (Mon May 11 04:17:43 2026)
+; Publish: 20260511081743 (Mon May 11 04:17:43 2026)
+; Activate: 20260511081743 (Mon May 11 04:17:43 2026)
+lab.local. IN DNSKEY 257 3 13 cNjExQmnITTKy25q55MFXHXsX135WiUWtGCCTbReUPZd0tDBOWhJ1rJk vBA30C2SuARIqNjWxmJmMUvaqIfXOw==
+; This is a zone-signing key, keyid 64115, for lab.local.
+; Created: 20260511081651 (Mon May 11 04:16:51 2026)
+; Publish: 20260511081651 (Mon May 11 04:16:51 2026)
+; Activate: 20260511081651 (Mon May 11 04:16:51 2026)
+lab.local. IN DNSKEY 256 3 13 PiZpYb18IseQnEgS+BrUJVWuesh/dzWLP8U1n/vZ0676KLws59lRUm7J znXaWMWHNh0ItZ2xqcUIhLvEgYdmiQ==
